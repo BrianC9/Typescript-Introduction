@@ -1,16 +1,18 @@
-let sales:number=123_456_789;
-let course:String="Typescript"
-let is_published:boolean=true;
+let user : [number,String] = [1, "Bryan"]
 
-// function render(document:any){
-//     return document;
-// }
+// Enums -> PascalCase
 
-let level ;
-level = "asd";
-level = 12
-let numbers = [1, 2, '3']
-console.log(numbers);
-let numersTs: number[]=[1,2,3]
-numersTs.forEach( n => n.toLocaleString)
-console.log(numersTs);
+
+//Javascript
+
+const small =  's';
+const medium = 'm';
+const large =  'l';
+
+// With Typecript Enums
+
+//enum Size {Small = 1,Medium , Large }
+const enum Size {Small = 's',Medium = 'm', Large = 'l'}
+
+const mySize:Size = Size.Medium;
+console.log(mySize); 
